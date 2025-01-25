@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f8; /* Light pink background */
+    color: #333;
+}
+header {
+    background: #f06666; /* Pink header */
+    
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+section {
+    
+    padding: 1.5rem 2rem;
+}
+h1, h2 {
+    color: #000000; /* Pink heading text */
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ffccd5;
+    padding-bottom: 15px;
+}
+li img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+li strong {
+    color: #ff6b6b; /* Highlight foods in pink */
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #ff6b6b; /* Pink footer */
+    color: white;
+    margin-top: 1rem;
+}
+footer p {
+    margin: 0;
+}
+a{
+    color: #fff5f8;
+    font-size:small ;
+}

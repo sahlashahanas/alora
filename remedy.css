@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+header {
+    background: #ff6b6b;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    
+}
+a{
+    color: #f9f9f9;
+}
+section {
+    padding: 1rem 2rem;
+}
+h1, h2 {
+    color: #ff6b6b;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    margin-top: 1rem;
+}
