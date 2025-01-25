@@ -124,7 +124,7 @@ html{
   .image{
     min-height: 93vh;
     width:60vw;
-    background: url('images/WhatsApp_Image_2025-01-23_at_14.46.30_1.jpeg') no-repeat;    
+    background: url('../images/WhatsApp_Image_2025-01-23_at_14.46.30_1.jpeg') no-repeat;    
     background-size: cover !important;
     background-position: center !important;   
  }
