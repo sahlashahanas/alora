@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Period Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .tracker-container {
+            background-color: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #e91e63;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #e91e63;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #d81b60;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="tracker-container">
+        <h1>Period Tracker</h1>
+        <form id="period-form">
+            <label for="last-period">Last Period Start Date:</label>
+            <input type="date" id="last-period" required>
+
+            <label for="cycle-length">Cycle Length (in days):</label>
+            <input type="number" id="cycle-length" min="20" max="45" required>
+
+            <button type="submit">Calculate Next Period</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script>
+        document.getElementById("period-form").addEventListener("submit",function(event)){
+            event.preventDefault();
+        }
+            const lastPeriodDate = document.getElementById("last-period").value;
+            const cycleLength = parseInt(document.getElementById("cycle-length").value);
+
+            // Check if inputs are valid
+            if (!lastPeriodDate || isNaN(cycleLength)) {
+                document.getElementById("result").innerText = "Please fill in all fields.";
+                return;
+            }
+
+            const lastPeriod = new Date(lastPeriodDate);
+            const nextPeriod = new Date(lastPeriod);
+            nextPeriod.setDate(lastPeriod.getDate() + cycleLength);
+
+            document.getElementById("result").innerText = 
+                Your next period is expected on: ${nextPeriod.toDateString()};
+        }
+    </script>
+
+   </body>
+</html>
