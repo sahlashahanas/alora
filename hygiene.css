@@ -6,7 +6,7 @@ body {
     color: #333;
   }
   header {
-    background-color: #ff6392;
+    background-color:#e0115f;
     padding: 20px;
     text-align: center;
     color: white;
@@ -18,7 +18,7 @@ body {
   nav {
     display: flex;
     justify-content: center;
-    background-color: #ff6392;
+    background-color:#e0115f;
   }
   nav a {
     color: white;
@@ -27,7 +27,7 @@ body {
     text-align: center;
   }
   nav a:hover {
-    background-color: #4CAF50;
+    background-color: #f80392;
   }
   .container {
     max-width: 800px;
@@ -55,7 +55,7 @@ body {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
-    background-color: #ff6392;
+    background-color:#e0115f;
     color: white;
     font-size: 0.9em;
   }

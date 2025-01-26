@@ -1,18 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.4;
     margin: 0;
     padding: 0;
     background-color: #fff5f8; /* Light pink background */
     color: #333;
 }
 header {
-    background: #f06666; /* Pink header */
+    background: #e0115f; /* Pink header */
     
     color: white;
-    padding: 1.5rem 0;
+    padding: 0;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 section {
@@ -46,7 +46,7 @@ li strong {
 footer {
     text-align: center;
     padding: 1rem;
-    background: #ff6b6b; /* Pink footer */
+    background: #e0115f; /* Pink footer */
     color: white;
     margin-top: 1rem;
 }

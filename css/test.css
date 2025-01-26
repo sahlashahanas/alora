@@ -15,7 +15,7 @@ body {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #ff6392;
+    background-color:#e0115f ;
 }
 nav a {
     color: white;
@@ -24,7 +24,7 @@ nav a {
     text-align: center;
 }
 nav a:hover {
-    background-color: #4CAF50;
+    background-color: #e779c6;
 }
 .tracker-container {
     background-color: white;
